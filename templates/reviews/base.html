@@ -1,0 +1,23 @@
+{% extends "reviews/index.html" %}
+{% block body %}
+
+{% for review in reviews %}
+    <div>
+        <h2>Username</h3>
+        <h4>{{ review.username }}</h2>
+    </div>
+    <br>
+    <div>
+        <h2>Text</h3>
+        <h4>{{ review.text }}</h2>
+    </div>
+    <br>
+    <div>
+        <h2>Date</h3>
+        <h4>{{ review.date }}</h2>
+    </div>
+    <br>
+    <hr>
+{% endfor %}
+
+{% endblock %}
